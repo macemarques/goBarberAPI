@@ -11,6 +11,12 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      
+      path: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
 
       created_at: {
         type: Sequelize.DATE,
